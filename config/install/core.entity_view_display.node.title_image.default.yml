@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.title_image.field_hero_image
+    - field.field.node.title_image.field_visibility
+    - node.type.title_image
+  module:
+    - image
+    - user
+id: node.title_image.default
+targetEntityType: node
+bundle: title_image
+mode: default
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  field_visibility: true
+  links: true

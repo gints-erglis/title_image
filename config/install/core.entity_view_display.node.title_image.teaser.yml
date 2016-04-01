@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.title_image.field_hero_image
+    - field.field.node.title_image.field_visibility
+    - node.type.title_image
+  module:
+    - user
+id: node.title_image.teaser
+targetEntityType: node
+bundle: title_image
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_hero_image: true
+  field_visibility: true
